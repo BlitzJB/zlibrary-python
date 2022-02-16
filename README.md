@@ -11,7 +11,7 @@ from zlibrary_python.a_sync import srape_search_query
 import asyncio
 
 loop = asyncio.get_event_loop()
-print(loop.run_until_complete(srape_search_query('some query here. needn't be url encoded')))
+print(loop.run_until_complete(srape_search_query('some query here. needn\'t be url encoded')))
 loop.close()
 ```
 set `fuzzy = True` in `srape_search_query` for getting the first 50 results that include fuzzy matches
