@@ -1,6 +1,5 @@
 from flask import jsonify, request
-from zlibrary_python.a_sync import srape_search_query
-import asyncio
+from zlibrary_python.sync import srape_search_query
 
 from .app import app
 
@@ -12,7 +11,5 @@ def search():
     if not query:
         return jsonify({'error': 'query is required'})
     
-    loop = asyncio.get_event_loop()
-    out = loop.run_until_complete(srape_search_query(query, fuzzy))
-    loop.close()
+    out = srape_search_query(query, fuzzy)
     return jsonify(out)
