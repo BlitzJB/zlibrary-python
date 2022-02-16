@@ -1,7 +1,7 @@
 # Purpose
 zlibrary is the world's largest collection if E-books and Articles available to the public for free. zlibrary_python is a Scrapper for the zlibrary website to make integration into other applications less painstaking. It strives to fast-track the development of tools that make knowledge more accessible. 
 
-Repo also includes a flask API service in `./api`. It is live at `#TODO` for the frontend friends.
+Repo also includes a flask API service in `./api`. It is live at [https://zlibrary-api.jb2k4.repl.co/](https://zlibrary-api.jb2k4.repl.co/) for the frontend friends.
 
 # Usage
 ### Setup
